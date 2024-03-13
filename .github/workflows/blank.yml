@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Download Clash config file
         run: wget -O myconfig.yaml https://dy.wmyun.men/link/CyH2oBIm1u4LGY3S?clash=1
 
@@ -25,11 +25,10 @@ jobs:
       - name: Print merged Clash config file
         run: cat myconfig.yaml
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-            folder: ./
-            clean: true
-            single-commit: true
-            force: true
-            ssh-key: ${{ secrets.MY_SSH_PRIVATE_KEY }}  
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add myconfig.yaml
+          git commit -m "Automatically merge myconfig.yaml and my.yaml" || exit 0
+          git push
