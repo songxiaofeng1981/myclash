@@ -32,3 +32,4 @@ jobs:
             clean: true
             single-commit: true
             force: true
+            ssh-key: ${{ secrets.MY_SSH_PRIVATE_KEY }}  
