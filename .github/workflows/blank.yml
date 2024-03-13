@@ -24,3 +24,11 @@ jobs:
 
       - name: Print merged Clash config file
         run: cat myconfig.yaml
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add myconfig.yaml
+          git commit -m "Automatically merge myconfig.yaml and my.yaml" || exit 0
+          git push
