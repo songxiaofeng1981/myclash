@@ -32,3 +32,6 @@ jobs:
           git add myconfig.yaml
           git commit -m "Automatically merge myconfig.yaml and my.yaml" || exit 0
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
