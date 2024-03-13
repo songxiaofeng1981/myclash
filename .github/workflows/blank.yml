@@ -8,22 +8,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  merge-configs:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+      - name: Download Clash config file
+        run: wget -O myconfig.yaml https://dy.wmyun.men/link/CyH2oBIm1u4LGY3S?clash=1
 
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Run a multi-line script
+      - name: Merge custom config into Clash config
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Merging custom config into Clash config..."
+          cat my.yaml >> myconfig.yaml
+          echo "Merge completed."
 
-      # 新增步骤: 使用wget下载文件并打印内容
-      - name: Download file and print content
-        run: |
-          wget -O myconfig.yaml https://dy.wmyun.men/link/CyH2oBIm1u4LGY3S?clash=1
-          cat myconfig.yaml
+      - name: Print merged Clash config file
+        run: cat myconfig.yaml
