@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # 确保使用GITHUB_TOKEN
       - name: Download Clash config file
         run: wget -O myconfig.yaml https://dy.wmyun.men/link/CyH2oBIm1u4LGY3S?clash=1
 
