@@ -6,4 +6,11 @@
   - DOMAIN-KEYWORD,notion,🔰国外流量
   - DOMAIN-KEYWORD,github,🔰国外流量
   - DOMAIN-KEYWORD,poe,🔰国外流量
+
+  - DOMAIN-SUFFIX,openai.com,🔰国外流量
+  - DOMAIN-SUFFIX,poe.com,🔰国外流量
+  - DOMAIN-SUFFIX,v2ex.com,🔰国外流量
+  - DOMAIN-SUFFIX,notion.so,🔰国外流量
+  - DOMAIN-SUFFIX,github.com,🔰国外流量
+
   
