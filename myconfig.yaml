@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://wmsxwd-g.men/link/CyH2oBIm1u4LGY3S?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2024-03-15 02:01:08
+## 上次更新于：2024-03-15 05:25:55
 #---------------------------------------------------#
 
 port: 7890
@@ -2084,4 +2084,11 @@ rules:
   - DOMAIN-KEYWORD,notion,🔰国外流量
   - DOMAIN-KEYWORD,github,🔰国外流量
   - DOMAIN-KEYWORD,poe,🔰国外流量
+
+  - DOMAIN-SUFFIX,openai.com,🔰国外流量
+  - DOMAIN-SUFFIX,poe.com,🔰国外流量
+  - DOMAIN-SUFFIX,v2ex.com,🔰国外流量
+  - DOMAIN-SUFFIX,notion.so,🔰国外流量
+  - DOMAIN-SUFFIX,github.com,🔰国外流量
+
   
