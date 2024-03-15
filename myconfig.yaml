@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://wmsxwd-g.men/link/CyH2oBIm1u4LGY3S?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2024-03-13 04:45:32
+## 上次更新于：2024-03-15 02:01:08
 #---------------------------------------------------#
 
 port: 7890
@@ -2083,4 +2083,5 @@ rules:
   - DOMAIN-KEYWORD,openai,🔰国外流量
   - DOMAIN-KEYWORD,notion,🔰国外流量
   - DOMAIN-KEYWORD,github,🔰国外流量
+  - DOMAIN-KEYWORD,poe,🔰国外流量
   
